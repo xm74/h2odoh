@@ -1,5 +1,5 @@
 # H2O HTTP/2 web server as DNS-over-HTTP service
-# v.20190908 (c)2018-2019 Max Kostikov https://kostikov.co e-mail: max@kostikov.co
+# v.20190908 (c)2018-2019 Max Kostikov, W: https://kostikov.co, E: max@kostikov.co
 
 proc {|env|
     if env['HTTP_ACCEPT'] == "application/dns-message"
