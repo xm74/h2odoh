@@ -1,7 +1,7 @@
 # h2odoh
 This is simple DNS-over-HTTPS service implementation with [H2O](https://github.com/h2o/h2o) HTTP/2 server. Code written using embedded mruby so the only thing you need to run own DoH service is H2O. 
 
-By default it use DNS resolver (Unbound is recommended) running localhost port 53.
+By default it use DNS resolver (Unbound is recommended) running on localhost port 53.
 
 Requires [Socket mrbgem](https://github.com/iij/mruby-socket) build into H2O code. At this moment this gem is in H2O 2.3.0-beta2 but it might be easly added to any version by cloning in `deps` directory before build.
 
