@@ -51,7 +51,7 @@ proc {|env|
             else
                 cc = 'no-cache'
             end
-            [200, { 'content-type' => 'application/dns-message', 'content-length' => str.size, 'cache-control' => cc }, [ str ] ]
+            [200, { 'content-type' => 'application/dns-message', 'content-length' => str.size, 'cache-control' => cc }, [ str ]]
         end
     else
         [415, { 'content-type' => 'text/plain' }, [ "Unsupported Media Type" ]]
