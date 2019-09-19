@@ -1,5 +1,5 @@
 # H2O HTTP/2 web server as DNS-over-HTTP service
-# v.20190908 (c)2018-2019 Max Kostikov, W: https://kostikov.co, E: max@kostikov.co
+# v.20190908 (c)2018-19 Max Kostikov, W: https://kostikov.co, E: max@kostikov.co
 
 proc {|env|
     if env['HTTP_ACCEPT'] == "application/dns-message"
@@ -41,7 +41,7 @@ proc {|env|
                     end
                     shift += 6
                     curttl = str[shift, 4].unpack1('N')
-                    shift += str[shift + 4, 2].unpack1('n') + 6 # responce data size
+                    shift += str[shift + 4, 2].unpack1('n') + 6 # response data size
                     if ttl == 0 or ttl > curttl
                         ttl = curttl
                     end
